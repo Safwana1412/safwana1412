@@ -1,146 +1,170 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: aliceblue;
+  color: black;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Header styles */
 .header {
-    text-align: center;
-    margin: 20px 0;
-  }
-  
-  .header-logo {
-    width: 150px;
-    margin: 0 10px;
-  }
-  
-  .info-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  .info-card {
-    background-color: white;
-    border: 2px solid #7499f6;
-    border-radius: 8px;
-    padding: 15px;
-    text-align: center;
-    width: 220px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-  }
-  
-  .info-icon {
-    width: 80px;
-    margin-bottom: 10px;
-  }
-  
-  .info-description {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-  
-  .sign-up-info {
-    text-align: left;
-  }
-  
-  .email {
-    font-weight: bold;
-    color: #7499f6;
-  }
-  
-  .age-groups,
-  .reasons-list {
-    text-align: left;
-    padding-left: 20px;
-  }
-  
-  .large-logos {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-  }
-  
-  .large-logo {
-    width: 200px;
-    margin: 0 15px;
-  }
-  
-  .soccer-ball {
-    width: 50px;
-    margin: 0 5px;
-  }
-  
-  .player-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  .player-card {
-    background-color: white;
-    border: 2px solid #7499f6;
-    border-radius: 8px;
-    padding: 15px;
-    width: 220px;
-    margin: 10px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .player-image {
-    width: 100px;
-    margin-bottom: 10px;
-  }
-  
-  .player-description {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-  
-  .footer {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 12px;
-    color: gray;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: aliceblue;
-    color: black;
-  }
-  
-  h1 {
-    color: black;
-    font-size: 40px;
-    text-shadow: #ebebeb 1px 1px;
-  }
-  
-  h2 {
-    font-size: 30px;
-    text-shadow: black 1px 1px;
-    background-color: aliceblue;
-    color: #7499f6;
-    padding: 20px;
-    margin: 0px;
-  }
-  
-  h3 {
-    color: black;
-    text-shadow: #ebebeb 1px 1px;
-    margin-top: 5px;
-    margin-bottom: 0px;
-  }
-  
-  li {
-    margin-top: 0px;
-    margin-bottom: 5px;
-    padding-top: 0px;
-    text-align: left;
-    color: black;
-  }
-  
-  div {
-    margin-bottom: 20px;
-  }
-  
-  img {
-    width: 125px;
-  }
-  
+  text-align: center;
+  margin: 30px 0;
+}
+
+.header-logo {
+  width: 120px; /* Adjust logo size */
+  margin: 0 15px; /* Margin for spacing */
+}
+
+/* Info gallery styles */
+.info-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Evenly space cards */
+  margin: 20px 0; /* Vertical margin */
+}
+
+.info-card {
+  background-color: white;
+  border: 2px solid #7499f6;
+  border-radius: 8px;
+  padding: 15px;
+  width: 220px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+.info-card:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.info-icon {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.info-description {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.sign-up-info {
+  text-align: left;
+}
+
+.email {
+  font-weight: bold;
+  color: #7499f6;
+}
+
+.age-groups,
+.reasons-list {
+  text-align: left;
+  padding-left: 20px;
+}
+
+/* Large logos section */
+.large-logos {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  gap: 20px; /* Space between logos */
+}
+
+.large-logo {
+  width: 180px; /* Logo size */
+  transition: transform 0.3s; /* Smooth effect */
+}
+
+.large-logo:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.soccer-ball {
+  width: 50px; /* Soccer ball size */
+}
+
+/* Player gallery styles */
+.player-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center player cards */
+  gap: 20px; /* Space between cards */
+  margin: 20px 0; /* Vertical margin */
+}
+
+.player-card {
+  background-color: white;
+  border: 2px solid #7499f6;
+  border-radius: 8px;
+  padding: 15px;
+  width: 220px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s; /* Smooth effect */
+}
+
+.player-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.player-image {
+  width: 100px; /* Image size */
+  margin-bottom: 10px; /* Space below images */
+}
+
+.player-description {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Footer styles */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: gray;
+}
+
+/* Heading styles */
+h1 {
+  color: black;
+  font-size: 40px;
+  text-shadow: #ebebeb 1px 1px;
+}
+
+h2 {
+  font-size: 30px;
+  text-shadow: black 1px 1px;
+  background-color: aliceblue;
+  color: #7499f6;
+  padding: 20px;
+  margin: 0;
+}
+
+h3 {
+  color: black;
+  text-shadow: #ebebeb 1px 1px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+/* List item styles */
+li {
+  margin-top: 0;
+  margin-bottom: 5px;
+  padding-top: 0;
+  text-align: left;
+  color: black;
+}
+
+/* Image styles */
+img {
+  max-width: 100%; /* Responsive images */
+  height: auto; /* Maintain aspect ratio */
+}
