@@ -1,0 +1,141 @@
+body {
+    background-image: url('background.png');
+  }
+  
+  /* Text styling */
+  p {
+    color: whitesmoke;
+    font-size: 20px;
+  }
+  
+  h1 {
+    font-weight: bold;
+    color: whitesmoke;
+  }
+  
+  h5 {
+    text-align: center;
+    color: whitesmoke;
+  }
+  
+  /* Styling for the intro game section */
+  .introtogame {
+    border-color: #ffa500; /* Orange border */
+    margin: 5px;
+    border-style: dotted;
+  }
+  
+  .introtogametext {
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  .pixelart {
+    width: 150px;
+  }
+  
+  #instructions {
+    text-align: center;
+    color: whitesmoke;
+  }
+  
+  /* Wave Instructions Section */
+  .waveinstruct {
+    border: 1px solid #cc6600; 
+    background-color: rgba(255, 165, 0, 0.7); 
+    color: whitesmoke;
+    text-align: center;
+    font-size: 0.9em;
+    height: 50px;
+    overflow: hidden;
+    width: 80%;
+    margin: 10px auto;
+    transition: height 0.5s ease;
+  }
+  
+  .waveinstruct:hover {
+    height: 230px;
+  }
+  
+  .instructionstitle {
+    text-align: center;
+  }
+  
+  /* Easy Level Styling */
+  #easylevel {
+    text-align: center;
+  }
+  
+  .waveeasy {
+    border: 1px solid #cc6600; /* Darker orange border */
+    background-color: rgba(255, 165, 0, 0.7); /* Light orange background with transparency */
+    color: whitesmoke;
+    text-align: center;
+    font-size: 0.9em;
+    height: 50px;
+    overflow: hidden;
+    width: 80%;
+    margin: 10px auto;
+    transition: height 0.5s ease;
+  }
+  
+  .waveeasy:hover {
+    height: 700px;
+  }
+  
+  .easyimages {
+    transition: opacity 0.5s ease;
+  }
+  
+  /* Medium Level Styling */
+  #mediumlevel {
+    text-align: center;
+  }
+  
+  .wavemedium {
+    border: 1px solid #cc6600; /* Darker orange border */
+    background-color: rgba(255, 165, 0, 0.7); /* Light orange background with transparency */
+    color: whitesmoke;
+    text-align: center;
+    font-size: 0.9em;
+    height: 50px;
+    overflow: hidden;
+    width: 80%;
+    margin: 10px auto;
+    transition: height 0.5s ease;
+  }
+  
+  .wavemedium:hover {
+    height: 700px;
+  }
+  
+  .mediumimages {
+    transition: opacity 0.5s ease;
+  }
+  
+  /* Hard Level Styling */
+  #hardlevel {
+    text-align: center;
+  }
+  
+  .wavehard {
+    border: 1px solid #cc6600; /* Darker orange border */
+    background-color: rgba(255, 165, 0, 0.7); /* Light orange background with transparency */
+    color: whitesmoke;
+    text-align: center;
+    font-size: 0.9em;
+    height: 50px;
+    overflow: hidden;
+    width: 80%;
+    margin: 10px auto;
+    transition: height 0.5s ease;
+  }
+  
+  .wavehard:hover {
+    height: 700px;
+  }
+  
+  .hardimages {
+    transition: opacity 0.5s ease;
+  }
+  

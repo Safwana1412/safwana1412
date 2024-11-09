@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="pj4.css">
+    <link rel="icon" type="image/x-icon" href="pixelart.png">
+  </head>
+  <body>
+    <img src="pixelart.png" width="150">
+    <div class="introtogame">
+      <h1 class="introtogametext">Welcome to Spot the Difference!</h1>
+      <h5> By safwan ahmed </h5>
+    </div>
+    
+    <div class="waveinstruct" id="instructions"> 
+      <h3 class="instructionstitle">Instructions</h3>
+
+      <p> Use your mouse to hover over the images. </p>
+        <p> Another image will pop up. </p>
+        <p>Spot the difference between these photos!</p>
+      <p> There are three levels, easy, medium and hard. </p>
+    </div>
+<div class="waveeasy" id="easylevel"> 
+  <h3> Easy </h3>
+  <p>You have 10 seconds to view the images. Remove your mouse from the image once the time is up.</p>
+  <div class="easyimages">
+  <img class="easyimages" src='easybefore.png'.png"
+       onmouseover="this.src='easy.png';"
+       onmouseout="this.src='easybefore.png';" width="900">
+  </div>
+    </div>
+    <div class="wavemedium" id="mediumlevel"> 
+    <h3> Medium </h3>
+      <p> You have 5 seconds to view the images. Remove your mouse from the image once the time is up.</p>
+      <img class="mediumimages" src="midbefore.png" 
+           onmouseover="this.src='midafter.png';"
+           onmouseout="this.src='midbefore.png';" width="900">
+    </div>
+    <div class="wavehard" id="hardlevel"> 
+      <h3>Hard</h3>
+      <p> You have 3 seconds to view the images. Remove your mouse from the image once the time is up. </p>
+      <img class="hardimages" src="hardbefore.png" 
+           onmouseover="this.src='hardafter.png';"
+           onmouseout="this.src='hardbefore.png';" width="900">
+    </div>
+    
+  </body>
+</html>
