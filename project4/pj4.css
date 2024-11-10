@@ -58,6 +58,7 @@ h5 {
   margin-top: 20px;
 }
 
+/* Common styling for all levels */
 .waveinstruct, .waveeasy, .wavemedium, .wavehard {
   border: 1px solid #cc6600;
   background-color: rgba(255, 165, 0, 0.8);
@@ -70,12 +71,16 @@ h5 {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   padding: 20px;
-  height: auto; /* Removed max-height */
-  overflow: visible; /* Allow content to expand */
+  height: auto; /* Keeps the height flexible */
+  max-height: 500px; /* Maximum height set for the pop-down (increased size) */
+  overflow: hidden; /* Prevents overflow of content initially */
 }
 
+/* Pop-down hover effect */
 .waveinstruct:hover, .waveeasy:hover, .wavemedium:hover, .wavehard:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  height: 700px; /* Height expands when hovered */
+  overflow: auto; /* Allows scrolling if content is too long */
 }
 
 .easyimages, .mediumimages, .hardimages {
@@ -88,6 +93,7 @@ h5 {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* Styling for the 'easy' level */
 .waveeasy {
   background-color: rgba(255, 165, 0, 0.9);
 }
@@ -101,6 +107,7 @@ h5 {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 }
 
+/* Styling for the 'medium' level */
 .wavemedium {
   background-color: rgba(255, 165, 0, 0.8);
 }
@@ -110,6 +117,7 @@ h5 {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 }
 
+/* Styling for the 'hard' level */
 .wavehard {
   background-color: rgba(255, 165, 0, 0.9);
 }
