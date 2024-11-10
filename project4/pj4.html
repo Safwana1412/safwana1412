@@ -1,55 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pj4.css">
     <link rel="icon" href="pixleart.png" type="image/png"> 
+    <title>Spot the Difference</title>
   </head>
   <body>
-    <img src="pixleart.png" width="150">
+    <!-- Pixel Art Image -->
+    <img src="pixleart.png" width="150" alt="Pixel Art Logo">
+    
+    <!-- Intro Section -->
     <div class="introtogame">
-      <h1 class="introtogametext">gadies and lentlemen welcome to spot the differnce</h1>
+      <h1 class="introtogametext">Gadies and Lentlemen, Welcome to Spot the Difference!</h1>
       <h5>By Safwan Ahmed</h5>
     </div>
 
-    <div class="waveinstruct" id="instructions"> 
+    <!-- Instructions Section -->
+    <div class="waveinstruct" id="instructions">
       <h3 class="instructionstitle">Instructions</h3>
       <p>Use your cursor to hover over the images.</p>
-      <p>After you do so the image will change</p>
-      <p>And your job is to use that peanut brain and spot the differnce!</p>
-      <p>There are three levels: easy, medium, and lastly i want to rip my hair out level.</p>
-      <p>Goodluck and heres the number for the national mental help hotline in case you need it.</p>
+      <p>After you do so, the image will change.</p>
+      <p>Your job is to spot the difference using your sharp eye!</p>
+      <p>There are three levels: Easy, Medium, and lastly... "I want to rip my hair out" level.</p>
+      <p>Good luck! And here's the number for the National Mental Help Hotline in case you need it.</p>
       <p>1-800-950-6264</p>
-
     </div>
-    
 
-    <!-- Easy Level -->
-    <div class="waveeasy" id="easylevel"> 
+    <!-- Easy Level Section -->
+    <div class="waveeasy" id="easylevel">
       <h3>Easy</h3>
       <p>You have 15 seconds to view the images. Remove your mouse from the image once the time is up.</p>
       <div class="easyimages">
         <img class="easyimages" src="easybefore.png" 
              onmouseover="this.src='easy.png';" 
-             onmouseout="this.src='easybefore.png';" width="900">
+             onmouseout="this.src='easybefore.png';" width="900" alt="Easy Level Image">
       </div>
     </div>
 
-    <!-- Medium Level -->
-    <div class="wavemedium" id="mediumlevel"> 
+    <!-- Medium Level Section -->
+    <div class="wavemedium" id="mediumlevel">
       <h3>Medium</h3>
       <p>You have 7 seconds to view the images. Remove your mouse from the image once the time is up.</p>
       <img class="mediumimages" src="midbefore.png" 
            onmouseover="this.src='midafter.png';"
-           onmouseout="this.src='midbefore.png';" width="900">
+           onmouseout="this.src='midbefore.png';" width="900" alt="Medium Level Image">
     </div>
 
-    <!-- Hard Level -->
-    <div class="wavehard" id="hardlevel"> 
+    <!-- Hard Level Section -->
+    <div class="wavehard" id="hardlevel">
       <h3>I want to rip my hair out level</h3>
       <p>You have 5 seconds to view the images. Remove your mouse from the image once the time is up.</p>
       <img class="hardimages" src="hardbefore.png" 
            onmouseover="this.src='hardafter.png';"
-           onmouseout="this.src='hardbefore.png';" width="900">
+           onmouseout="this.src='hardbefore.png';" width="900" alt="Hard Level Image">
     </div>
     
   </body>
