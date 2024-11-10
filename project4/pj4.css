@@ -35,15 +35,13 @@ body {
   text-align: center;
   font-size: 0.9em;
   height: 50px;
-  overflow: hidden;
   width: 80%;
   margin: 10px auto;
   transition: height 0.5s ease;
 }
 
 .waveinstruct:hover {
-  height: 700px;
-  overflow: hidden;
+  height: 230px;
 }
 
 .instructionstitle {
@@ -61,7 +59,6 @@ body {
   text-align: center;
   font-size: 0.9em;
   height: 50px;
-  overflow: hidden;
   width: 80%;
   margin: 10px auto;
   transition: height 0.5s ease;
@@ -69,7 +66,6 @@ body {
 
 .waveeasy:hover {
   height: 700px;
-  overflow: hidden;
 }
 
 .easyimages {
@@ -87,7 +83,6 @@ body {
   text-align: center;
   font-size: 0.9em;
   height: 50px;
-  overflow: hidden;
   width: 80%;
   margin: 10px auto;
   transition: height 0.5s ease;
@@ -95,7 +90,6 @@ body {
 
 .wavemedium:hover {
   height: 700px;
-  overflow: hidden;
 }
 
 .mediumimages {
@@ -113,7 +107,6 @@ body {
   text-align: center;
   font-size: 0.9em;
   height: 50px;
-  overflow: hidden;
   width: 80%;
   margin: 10px auto;
   transition: height 0.5s ease;
@@ -121,9 +114,9 @@ body {
 
 .wavehard:hover {
   height: 700px;
-  overflow: hidden;
 }
 
 .hardimages {
   transition: opacity 0.5s ease;
 }
+
