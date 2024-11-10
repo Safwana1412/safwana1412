@@ -43,6 +43,7 @@ body {
 
 .waveinstruct:hover {
   height: 700px;
+  overflow: hidden;
 }
 
 .instructionstitle {
@@ -68,6 +69,7 @@ body {
 
 .waveeasy:hover {
   height: 700px;
+  overflow: hidden;
 }
 
 .easyimages {
@@ -93,6 +95,7 @@ body {
 
 .wavemedium:hover {
   height: 700px;
+  overflow: hidden;
 }
 
 .mediumimages {
@@ -118,6 +121,7 @@ body {
 
 .wavehard:hover {
   height: 700px;
+  overflow: hidden;
 }
 
 .hardimages {
