@@ -1,141 +1,160 @@
 body {
-    background-image: url('background.png');
-  }
-  
-  /* Text styling */
-  p {
-    color: whitesmoke;
-    font-size: 20px;
-  }
-  
-  h1 {
-    font-weight: bold;
-    color: whitesmoke;
-  }
-  
-  h5 {
-    text-align: center;
-    color: whitesmoke;
-  }
-  
-  /* Styling for the intro game section */
-  .introtogame {
-    border-color: #ffa500; /* Orange border */
-    margin: 5px;
-    border-style: dotted;
-  }
-  
-  .introtogametext {
-    font-size: 40px;
-    text-align: center;
-  }
-  
-  .pixelart {
-    width: 150px;
-  }
-  
-  #instructions {
-    text-align: center;
-    color: whitesmoke;
-  }
-  
-  /* Wave Instructions Section */
-  .waveinstruct {
-    border: 1px solid #cc6600; 
-    background-color: rgba(255, 165, 0, 0.7); 
-    color: whitesmoke;
-    text-align: center;
-    font-size: 0.9em;
-    height: 50px;
-    overflow: hidden;
-    width: 80%;
-    margin: 10px auto;
-    transition: height 0.5s ease;
-  }
-  
-  .waveinstruct:hover {
-    height: 230px;
-  }
-  
-  .instructionstitle {
-    text-align: center;
-  }
-  
-  /* Easy Level Styling */
-  #easylevel {
-    text-align: center;
-  }
-  
-  .waveeasy {
-    border: 1px solid #cc6600; /* Darker orange border */
-    background-color: rgba(255, 165, 0, 0.7); /* Light orange background with transparency */
-    color: whitesmoke;
-    text-align: center;
-    font-size: 0.9em;
-    height: 50px;
-    overflow: hidden;
-    width: 80%;
-    margin: 10px auto;
-    transition: height 0.5s ease;
-  }
-  
-  .waveeasy:hover {
-    height: 700px;
-  }
-  
-  .easyimages {
-    transition: opacity 0.5s ease;
-  }
-  
-  /* Medium Level Styling */
-  #mediumlevel {
-    text-align: center;
-  }
-  
-  .wavemedium {
-    border: 1px solid #cc6600; /* Darker orange border */
-    background-color: rgba(255, 165, 0, 0.7); /* Light orange background with transparency */
-    color: whitesmoke;
-    text-align: center;
-    font-size: 0.9em;
-    height: 50px;
-    overflow: hidden;
-    width: 80%;
-    margin: 10px auto;
-    transition: height 0.5s ease;
-  }
-  
-  .wavemedium:hover {
-    height: 700px;
-  }
-  
-  .mediumimages {
-    transition: opacity 0.5s ease;
-  }
-  
-  /* Hard Level Styling */
-  #hardlevel {
-    text-align: center;
-  }
-  
-  .wavehard {
-    border: 1px solid #cc6600; /* Darker orange border */
-    background-color: rgba(255, 165, 0, 0.7); /* Light orange background with transparency */
-    color: whitesmoke;
-    text-align: center;
-    font-size: 0.9em;
-    height: 50px;
-    overflow: hidden;
-    width: 80%;
-    margin: 10px auto;
-    transition: height 0.5s ease;
-  }
-  
-  .wavehard:hover {
-    height: 700px;
-  }
-  
-  .hardimages {
-    transition: opacity 0.5s ease;
-  }
-  
+  background-image: url('background.png');
+  background-size: cover;
+  background-position: center;
+}
+
+p {
+  color: whitesmoke;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-weight: bold;
+  color: whitesmoke;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+h5 {
+  text-align: center;
+  color: whitesmoke;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.introtogame {
+  border-color: #ffa500;
+  margin: 5px;
+  border-style: dotted;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.introtogametext {
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.pixelart {
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#instructions {
+  text-align: center;
+  color: whitesmoke;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.waveinstruct {
+  border: 1px solid #cc6600;
+  background-color: rgba(255, 165, 0, 0.7);
+  color: whitesmoke;
+  text-align: center;
+  font-size: 0.9em;
+  height: 50px;
+  overflow: hidden;
+  width: 80%;
+  margin: 10px auto;
+  transition: height 0.5s ease;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.waveinstruct:hover {
+  height: 230px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.waveeasy {
+  border: 1px solid #cc6600;
+  background-color: rgba(255, 165, 0, 0.7);
+  color: whitesmoke;
+  text-align: center;
+  font-size: 0.9em;
+  height: 50px;
+  overflow: hidden;
+  width: 80%;
+  margin: 10px auto;
+  transition: height 0.5s ease;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.waveeasy:hover {
+  height: 700px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.easyimages {
+  transition: opacity 0.5s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.easyimages:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.wavemedium {
+  border: 1px solid #cc6600;
+  background-color: rgba(255, 165, 0, 0.7);
+  color: whitesmoke;
+  text-align: center;
+  font-size: 0.9em;
+  height: 50px;
+  overflow: hidden;
+  width: 80%;
+  margin: 10px auto;
+  transition: height 0.5s ease;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.wavemedium:hover {
+  height: 700px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.mediumimages {
+  transition: opacity 0.5s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mediumimages:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.wavehard {
+  border: 1px solid #cc6600;
+  background-color: rgba(255, 165, 0, 0.7);
+  color: whitesmoke;
+  text-align: center;
+  font-size: 0.9em;
+  height: 50px;
+  overflow: hidden;
+  width: 80%;
+  margin: 10px auto;
+  transition: height 0.5s ease;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.wavehard:hover {
+  height: 700px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.hardimages {
+  transition: opacity 0.5s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hardimages:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
