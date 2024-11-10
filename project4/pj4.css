@@ -98,6 +98,14 @@ h5 {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 
+.waveeasy p {
+  visibility: hidden;
+}
+
+.waveeasy:hover p {
+  visibility: visible;
+}
+
 .easyimages {
   transition: opacity 0.5s ease;
   width: 60%;
@@ -131,6 +139,14 @@ h5 {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 
+.wavemedium p {
+  visibility: hidden;
+}
+
+.wavemedium:hover p {
+  visibility: visible;
+}
+
 .mediumimages {
   transition: opacity 0.5s ease;
   width: 60%;
@@ -162,6 +178,14 @@ h5 {
 .wavehard:hover {
   height: 700px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.wavehard p {
+  visibility: hidden;
+}
+
+.wavehard:hover p {
+  visibility: visible;
 }
 
 .hardimages {
