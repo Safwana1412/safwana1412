@@ -6,14 +6,13 @@ body {
 }
 
 p {
-  color: whitesmoke;
   font-size: 20px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   line-height: 1.6;
+  margin-top: 10px;
 }
 
 h1, h5 {
-  color: whitesmoke;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
   font-weight: bold;
 }
@@ -70,9 +69,8 @@ h5 {
   transition: all 0.5s ease;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  padding: 20px; /* Ensure padding inside */
-  height: auto; /* Allow height to adjust based on content */
-  max-height: 700px; /* Maximum height */
+  padding: 20px;
+  height: auto; /* Removed max-height */
   overflow: visible; /* Allow content to expand */
 }
 
