@@ -1,5 +1,5 @@
 body {
-  background-image: url('background.png');
+  background-image: url('bigbackground.png');
   background-size: cover;
   background-position: center;
   color: whitesmoke;
@@ -9,65 +9,44 @@ body {
 }
 
 .introtogame {
-  border-color: #FFA500;
-  margin: 20px;
+  border-color: #e8b1ea;
+  margin: 5px;
   border-style: dotted;
-  padding: 20px;
-  background-color: rgba(255, 165, 0, 0.3);
 }
 
 .introtogametext {
   font-size: 40px;
   text-align: center;
-  color: #FF4500;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-p {
-  font-size: 20px;
-  color: #FFD700;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+.pixelart {
+  width: 150px;
 }
 
-h1, h5 {
-  font-weight: bold;
-  color: #FF6347;
+#instructions {
   text-align: center;
+  color: whitesmoke;
 }
 
 .waveinstruct, .waveeasy, .wavemedium, .wavehard {
-  border: 1px solid #FF8C00;
-  background-color: #FFA500;
+  border: 1px solid #192A51;
+  background-color: #e8b1ea;
   color: whitesmoke;
   text-align: center;
   font-size: 0.9em;
   height: 50px;
+  overflow: hidden;
   width: 80%;
   margin: 10px auto;
-  transition: all 0.5s ease;
+  transition: height 0.5s ease, box-shadow 0.5s ease;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  overflow: visible;
 }
 
 .waveinstruct:hover, .waveeasy:hover, .wavemedium:hover, .wavehard:hover {
   height: 700px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-}
-
-.waveinstruct:hover::after, 
-.waveeasy:hover::after, 
-.wavemedium:hover::after, 
-.wavehard:hover::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: -1;
 }
 
 .waveeasy {
@@ -87,13 +66,15 @@ h1, h5 {
   margin-bottom: 10px;
   color: #FF6347;
   font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .easyimages, .mediumimages, .hardimages {
   transition: opacity 0.5s ease, transform 0.3s ease;
   width: 100%;
-  margin-bottom: 10px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
 }
 
 .easyimages:hover, .mediumimages:hover, .hardimages:hover {
