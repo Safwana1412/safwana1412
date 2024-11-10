@@ -6,31 +6,26 @@ body {
 }
 
 p {
+  color: whitesmoke;
   font-size: 20px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   line-height: 1.6;
   margin-top: 10px;
 }
 
-h1, h5 {
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-  font-weight: bold;
-}
-
 h1 {
-  font-size: 32px;
-  text-align: center;
-  margin-top: 10px;
+  font-weight: bold;
+  color: whitesmoke;
 }
 
 h5 {
-  font-size: 18px;
   text-align: center;
-  margin-top: 5px;
+  color: whitesmoke;
 }
 
+/* Styling for the intro game section */
 .introtogame {
-  border-color: #ffa500;
+  border-color: #ffa500; /* Orange border */
   margin: 5px;
   border-style: dotted;
   padding: 20px;
@@ -58,71 +53,78 @@ h5 {
   margin-top: 20px;
 }
 
-/* Common styling for all levels */
+/* Base Style for each Wave Section */
 .waveinstruct, .waveeasy, .wavemedium, .wavehard {
-  border: 1px solid #cc6600;
-  background-color: rgba(255, 165, 0, 0.8);
+  border: 1px solid #cc6600; /* Orange border */
+  background-color: rgba(255, 165, 0, 0.7); /* Light orange background */
   color: whitesmoke;
   text-align: center;
   font-size: 0.9em;
+  height: 50px; /* Initial height (collapsed) */
+  overflow: hidden; /* Prevent content overflow */
   width: 80%;
-  margin: 20px auto;
-  transition: all 0.5s ease;
+  margin: 10px auto;
+  padding: 10px;
+  transition: height 0.5s ease; /* Smooth height transition */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  padding: 20px;
-  height: auto; /* Keeps the height flexible */
-  max-height: 500px; /* Maximum height set for the pop-down (increased size) */
-  overflow: hidden; /* Prevents overflow of content initially */
 }
 
-/* Pop-down hover effect */
+/* Hover Effect to Expand */
 .waveinstruct:hover, .waveeasy:hover, .wavemedium:hover, .wavehard:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-  height: 700px; /* Height expands when hovered */
-  overflow: auto; /* Allows scrolling if content is too long */
+  height: 230px; /* Height when expanded */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Shadow on hover */
 }
 
-.easyimages, .mediumimages, .hardimages {
-  transition: opacity 0.5s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.easyimages:hover, .mediumimages:hover, .hardimages:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* Styling for the 'easy' level */
+/* Easy Level Styling */
 .waveeasy {
-  background-color: rgba(255, 165, 0, 0.9);
+  background-color: rgba(255, 165, 0, 0.7); /* Light orange */
+}
+
+.waveeasy:hover {
+  height: 700px; /* Expand to show more content */
 }
 
 .easyimages {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.5s ease;
 }
 
-.easyimages:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
-}
-
-/* Styling for the 'medium' level */
+/* Medium Level Styling */
 .wavemedium {
-  background-color: rgba(255, 165, 0, 0.8);
+  background-color: rgba(255, 165, 0, 0.7); /* Light orange */
 }
 
-.mediumimages:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+.wavemedium:hover {
+  height: 700px; /* Expand to show more content */
 }
 
-/* Styling for the 'hard' level */
+.mediumimages {
+  transition: opacity 0.5s ease;
+}
+
+/* Hard Level Styling */
 .wavehard {
-  background-color: rgba(255, 165, 0, 0.9);
+  background-color: rgba(255, 165, 0, 0.7); /* Light orange */
 }
 
-.hardimages:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+.wavehard:hover {
+  height: 700px; /* Expand to show more content */
+}
+
+.hardimages {
+  transition: opacity 0.5s ease;
+}
+
+/* Optional: Styling for the Title inside the hover box */
+.instructionstitle {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Level Header Styling */
+#easylevel, #mediumlevel, #hardlevel {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
 }
