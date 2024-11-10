@@ -9,20 +9,23 @@ body {
 }
 
 .introtogame {
-  border-color: #e8b1ea;
+  border-color: #FFA500;
   margin: 20px;
   border-style: dotted;
   padding: 20px;
+  background-color: rgba(255, 165, 0, 0.3);
 }
 
 .introtogametext {
   font-size: 40px;
   text-align: center;
+  color: #FF7F50;
 }
 
 p {
   font-size: 20px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  color: #FFA500;
 }
 
 h1, h5 {
@@ -32,8 +35,8 @@ h1, h5 {
 }
 
 .waveinstruct, .waveeasy, .wavemedium, .wavehard {
-  border: 1px solid #192A51;
-  background-color: #e8b1ea;
+  border: 1px solid #FF8C00;
+  background-color: #FFA500;
   color: whitesmoke;
   text-align: center;
   font-size: 0.9em;
@@ -68,6 +71,7 @@ h1, h5 {
 .instructionstitle {
   font-size: 1.2em;
   margin-bottom: 10px;
+  color: #FF4500;
 }
 
 .easyimages, .mediumimages, .hardimages {
@@ -77,4 +81,11 @@ h1, h5 {
 .easyimages:hover, .mediumimages:hover, .hardimages:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  background-color: #FF6347;
+  padding: 20px;
+  text-align: center;
+  color: white;
 }
