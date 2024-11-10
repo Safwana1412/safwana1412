@@ -2,24 +2,32 @@ body {
   background-image: url('background.png');
   background-size: cover;
   background-position: center;
+  color: whitesmoke;
 }
 
 p {
   color: whitesmoke;
   font-size: 20px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  line-height: 1.6;
+}
+
+h1, h5 {
+  color: whitesmoke;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
 }
 
 h1 {
-  font-weight: bold;
-  color: whitesmoke;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 32px;
+  text-align: center;
+  margin-top: 10px;
 }
 
 h5 {
+  font-size: 18px;
   text-align: center;
-  color: whitesmoke;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  margin-top: 5px;
 }
 
 .introtogame {
@@ -28,13 +36,13 @@ h5 {
   border-style: dotted;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .introtogametext {
   font-size: 40px;
   text-align: center;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 .pixelart {
@@ -46,115 +54,69 @@ h5 {
 #instructions {
   text-align: center;
   color: whitesmoke;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  margin-top: 20px;
 }
 
-.waveinstruct {
+.waveinstruct, .waveeasy, .wavemedium, .wavehard {
   border: 1px solid #cc6600;
-  background-color: rgba(255, 165, 0, 0.7);
+  background-color: rgba(255, 165, 0, 0.8);
   color: whitesmoke;
   text-align: center;
   font-size: 0.9em;
-  height: 50px;
-  overflow: hidden;
   width: 80%;
-  margin: 10px auto;
-  transition: height 0.5s ease;
+  margin: 20px auto;
+  transition: all 0.5s ease;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 20px; /* Ensure padding inside */
+  height: auto; /* Allow height to adjust based on content */
+  max-height: 700px; /* Maximum height */
+  overflow: visible; /* Allow content to expand */
 }
 
-.waveinstruct:hover {
-  height: 230px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+.waveinstruct:hover, .waveeasy:hover, .wavemedium:hover, .wavehard:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.easyimages, .mediumimages, .hardimages {
+  transition: opacity 0.5s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.easyimages:hover, .mediumimages:hover, .hardimages:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .waveeasy {
-  border: 1px solid #cc6600;
-  background-color: rgba(255, 165, 0, 0.7);
-  color: whitesmoke;
-  text-align: center;
-  font-size: 0.9em;
-  height: 50px;
-  overflow: hidden;
-  width: 80%;
-  margin: 10px auto;
-  transition: height 0.5s ease;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.waveeasy:hover {
-  height: 700px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 165, 0, 0.9);
 }
 
 .easyimages {
-  transition: opacity 0.5s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .easyimages:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 }
 
 .wavemedium {
-  border: 1px solid #cc6600;
-  background-color: rgba(255, 165, 0, 0.7);
-  color: whitesmoke;
-  text-align: center;
-  font-size: 0.9em;
-  height: 50px;
-  overflow: hidden;
-  width: 80%;
-  margin: 10px auto;
-  transition: height 0.5s ease;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.wavemedium:hover {
-  height: 700px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-.mediumimages {
-  transition: opacity 0.5s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 165, 0, 0.8);
 }
 
 .mediumimages:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 }
 
 .wavehard {
-  border: 1px solid #cc6600;
-  background-color: rgba(255, 165, 0, 0.7);
-  color: whitesmoke;
-  text-align: center;
-  font-size: 0.9em;
-  height: 50px;
-  overflow: hidden;
-  width: 80%;
-  margin: 10px auto;
-  transition: height 0.5s ease;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.wavehard:hover {
-  height: 700px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-.hardimages {
-  transition: opacity 0.5s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 165, 0, 0.9);
 }
 
 .hardimages:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 }
