@@ -76,7 +76,7 @@ h1, h5 {
 
 .easyimages, .mediumimages, .hardimages {
   display: block;
-  width: 80%;  /* Reduced width to make the images smaller */
+  width: 70%;  /* Reduce the width even further for smaller images */
   margin: 10px auto;
   height: auto;
   object-fit: contain;
@@ -98,7 +98,7 @@ footer {
 .waveinstruct .easyimages, .waveeasy .easyimages, .wavemedium .mediumimages, .wavehard .hardimages {
   display: block;
   margin: 0 auto;
-  width: 80%;  /* Reduced width to match */
+  width: 70%;  /* Reduced width for even smaller images */
   object-fit: contain;
 }
 
