@@ -76,7 +76,7 @@ h1, h5 {
 
 .easyimages, .mediumimages, .hardimages {
   display: block;
-  width: 100%;
+  width: 80%;  /* Reduced width to make the images smaller */
   margin: 10px auto;
   height: auto;
   object-fit: contain;
@@ -98,11 +98,27 @@ footer {
 .waveinstruct .easyimages, .waveeasy .easyimages, .wavemedium .mediumimages, .wavehard .hardimages {
   display: block;
   margin: 0 auto;
-  width: 100%;
+  width: 80%;  /* Reduced width to match */
   object-fit: contain;
 }
 
 .waveinstruct:hover .easyimages, .waveeasy:hover .easyimages, .wavemedium:hover .mediumimages, .wavehard:hover .hardimages {
   opacity: 1;
   transition: opacity 0.5s ease;
+}
+
+.waveinstruct {
+  padding-bottom: 20px;
+}
+
+.waveeasy {
+  padding-bottom: 20px;
+}
+
+.wavemedium {
+  padding-bottom: 20px;
+}
+
+.wavehard {
+  padding-bottom: 20px;
 }
